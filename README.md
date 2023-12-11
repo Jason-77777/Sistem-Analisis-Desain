@@ -1,2 +1,10 @@
 # Sistem-Analisis-Desain
-halo teman2 ini kt mulai sja yhh xixixiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+Nama Member:
+1. Cherry
+2. Geovani
+3. Jason
+4. Vicky
+5. Winnie
+
+Deskripsi:
+Ini adalah sebuah design website pemesanan tiket bioskop yang dirancang dengan simpel menggunakan HTML, CSS, dan JavaScript. 

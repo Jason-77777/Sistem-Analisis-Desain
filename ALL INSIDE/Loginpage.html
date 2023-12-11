@@ -12,12 +12,8 @@
 <body>
     <div class="login-container">
         <form class="login-form" action="mainpage.html" method="post">
-            <!-- <label for="username">Username:</label> -->
             <input type="text" id="username" name="username" placeholder="Email or Phone Number" required>
-
-            <!-- <label for="password">Password:</label> -->
             <input type="password" id="password" name="password" placeholder="Password" required>
-
             <button type="submit">Login</button>
             <div class="separator">or</div>
             <button type="button" class="google-button">Continue with Google</button>
@@ -33,12 +29,10 @@
             const form = document.querySelector(".login-form");
 
             form.addEventListener("submit", function (event) {
-                // Menghentikan formulir dari pengiriman default
                 event.preventDefault();
 
-                // Lakukan otentikasi di sini (mis., cek username dan password)
+                // NO AUTHORIZATION 😁😁
 
-                // Setelah otentikasi berhasil, arahkan pengguna ke halaman beranda
                 window.location.href = "mainpage.html";
             });
         });
