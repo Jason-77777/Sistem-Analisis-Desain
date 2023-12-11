@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Loginpage.css">
+    <script src="Loginpage.js"></script>
     <title>Login Page</title>
 </head>
+
 <body>
     <div class="login-container">
-        <form class="login-form">
+        <form class="login-form" action="mainpage.html" method="post">
             <!-- <label for="username">Username:</label> -->
             <input type="text" id="username" name="username" placeholder="Email or Phone Number" required>
 
@@ -21,7 +24,25 @@
             <div class="seperator2">
                 Reset Password
             </div>
-
         </form>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector(".login-form");
+
+            form.addEventListener("submit", function (event) {
+                // Menghentikan formulir dari pengiriman default
+                event.preventDefault();
+
+                // Lakukan otentikasi di sini (mis., cek username dan password)
+
+                // Setelah otentikasi berhasil, arahkan pengguna ke halaman beranda
+                window.location.href = "mainpage.html";
+            });
+        });
+    </script>
 </body>
+
 </html>
