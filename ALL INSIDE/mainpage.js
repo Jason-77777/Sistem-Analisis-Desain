@@ -15,5 +15,10 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Ganti angka ini dengan delay yang diinginkan (dalam milidetik)
+    setTimeout(showSlides, 3000); 
+}
+
+function showDetails() {
+    // Logika untuk menampilkan detail film
+    alert("Movie details will be shown here.");
 }
