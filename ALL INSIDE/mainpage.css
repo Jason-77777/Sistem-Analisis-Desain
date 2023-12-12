@@ -52,8 +52,6 @@ nav a:hover {
 
 
 /* BODY */
-/* Gaya untuk slideshow */
-/* Gaya untuk slideshow */
 .slideshow-container {
     max-width: fit-content;
     max-height: fit-content;
@@ -67,10 +65,8 @@ nav a:hover {
     display: flex;
     margin: auto;
     position: relative;
-    /* Tambahkan properti position: relative; */
 }
 
-/* Gaya untuk indikator titik */
 .dot-container {
     position: absolute;
     bottom: 10px;
@@ -92,14 +88,15 @@ nav a:hover {
     background-color: #717171;
 }
 
-/* Gaya untuk action buttons */
+/* ACTION BUTTON */
+
 .action-buttons {
     text-align: center;
-    margin-top: 20px; /* Sesuaikan margin yang diinginkan */
+    margin-top: 20px; 
 }
 
 .action-button {
-    margin: 0 10px; /* Sesuaikan margin yang diinginkan */
+    margin: 0 10px; 
     padding: 10px 20px;
     background-color: #333;
     color: white;
@@ -113,10 +110,9 @@ nav a:hover {
     background-color: #555;
 }
 
-
+/* MOVIE KATALOG */
 .movie-entry {
     border: 2px solid white;
-    shape-margin: 20%;
     padding: auto;
     margin: 10px;
     text-align: center;
@@ -133,18 +129,97 @@ nav a:hover {
     padding: 8px 16px;
     border: none;
     cursor: pointer;
-    background-color: white; /* Atur warna latar belakang menjadi putih */
+    background-color: white; 
     color: rgb(0, 17, 144);
 }
 
-
-/* Responsif: Sesuaikan ukuran font atau layout untuk tampilan seluler */
 @media (max-width: 600px) {
     .movie-entry {
         /* Atur properti responsif di sini */
     }
 }
 
-.puwkey{
+.puwkey {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
     display: flex;
 }
+
+.carousel-container {
+    position: relative;
+}
+
+.movie-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+/* 
+.movie-entry {
+    width: 100%;
+} */
+
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+}
+/* 
+PROMOTION */
+.promo{
+    display: flex;
+}
+
+.promotion{
+    background-color: aqua;
+    border: 2px solid white;
+    padding: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+.promotion img{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+/* footer */
+.footer {
+    background-color: #00158a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-section {
+    margin-right: 20px;
+}
+
+
+.footer ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.footer li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.footer li:hover{
+    color: white;
+}
+
+/* Styling lainnya */
