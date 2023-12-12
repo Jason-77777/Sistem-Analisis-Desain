@@ -194,32 +194,39 @@ PROMOTION */
 
 /* footer */
 .footer {
+    display: flex;
+    justify-content: space-around;
     background-color: #00158a;
     color: white;
     padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
 }
 
 .footer-section {
-    margin-right: 20px;
-}
-
-
-.footer ul {
     list-style-type: none;
-    padding: 5px;
+    padding: 0;
 }
 
-.footer li {
+.footer-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section li {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
 }
 
-.footer li:hover{
+.footer-section li a {
+    text-decoration: none;
     color: white;
+    transition: color 0.3s;
 }
 
-/* Styling lainnya */
+.footer-section li a:hover {
+    color: #00eeff;
+}
+
+
+
