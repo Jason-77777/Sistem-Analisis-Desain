@@ -172,6 +172,12 @@ nav a:hover {
     font-size: 24px;
     cursor: pointer;
 }
+.no-link {
+    text-decoration: none;
+    cursor: default;
+    color: inherit;
+}
+
 /* 
 PROMOTION */
 .promo{

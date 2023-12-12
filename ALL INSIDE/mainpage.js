@@ -18,52 +18,60 @@ function showSlides() {
     setTimeout(showSlides, 3000);
 }
 
+
+
+
+
 function showDetails() {
     // Logika untuk menampilkan detail film
     alert("Movie details will be shown here.");
 }
 
+
+
+
+
 let currentSet = 0;
-    const totalSets = 2; // Total set gambar
-    const images = [
-        [
-            "Ghibli Inspired Wallapaper.jpg",
-            "coffee shop with warm atmosphere [ wallpaper 4k ].jpg",
-            "download.jpg"
-        ],
-        [
-            // Tambahkan 3 gambar lagi untuk set kedua
-            "mesin raksasa.jpg",
-            "orang melamun.jpg",
-            "rumah hobbit.jpg"
-        ]
-    ];
+const totalSets = 2; // Total set gambar
+const images = [
+    [
+        "Ghibli Inspired Wallapaper.jpg",
+        "coffee shop with warm atmosphere [ wallpaper 4k ].jpg",
+        "download.jpg"
+    ],
+    [
+        // Tambahkan 3 gambar lagi untuk set kedua
+        "mesin raksasa.jpg",
+        "orang melamun.jpg",
+        "rumah hobbit.jpg"
+    ]
+];
 
-    function showDetails() {
-        // Logika untuk menampilkan detail film
-        alert("Movie details will be shown here.");
+function showDetails() {
+    // Logika untuk menampilkan detail film
+    alert("Movie details will be shown here.");
+}
+
+function changeSlide(direction) {
+    const movieCarousel = document.querySelector('.movie-carousel');
+
+    currentSet += direction;
+
+    if (currentSet >= totalSets) {
+        currentSet = 0;
+    } else if (currentSet < 0) {
+        currentSet = totalSets - 1;
     }
 
-    function changeSlide(direction) {
-        const movieCarousel = document.querySelector('.movie-carousel');
+    updateImage(images[currentSet]);
+    const translateValue = -100 * currentSet;
+    movieCarousel.style.transform = `translateX(${translateValue}%)`;
+}
 
-        currentSet += direction;
+function updateImage(imageSet) {
+    const imageElements = document.querySelectorAll('.movie-entry img');
 
-        if (currentSet >= totalSets) {
-            currentSet = 0;
-        } else if (currentSet < 0) {
-            currentSet = totalSets - 1;
-        }
-
-        updateImage(images[currentSet]);
-        const translateValue = -100 * currentSet;
-        movieCarousel.style.transform = `translateX(${translateValue}%)`;
+    for (let i = 0; i < 3; i++) {
+        imageElements[i].src = imageSet[i];
     }
-
-    function updateImage(imageSet) {
-        const imageElements = document.querySelectorAll('.movie-entry img');
-
-        for (let i = 0; i < 3; i++) {
-            imageElements[i].src = imageSet[i];
-        }
-    }
+}

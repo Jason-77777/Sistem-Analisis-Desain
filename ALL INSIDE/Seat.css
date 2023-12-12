@@ -122,3 +122,83 @@ nav a:hover {
     max-width: 100%; 
     max-height: 100%; 
 }
+
+.action-buttons {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.action-button {
+    margin: 0 50px; 
+    padding: 10px 2px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.buttons{
+    margin: 20px;
+}
+
+.action-button:hover {
+    background-color: #555;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00158a;
+    color: white;
+    padding: 20px;
+}
+
+.footer-section {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.footer-section li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-section li a:hover {
+    color: #00eeff;
+}
+
+.jadwal
+{
+    background-color: white;
+    max-width: 80%;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+
+.logo1 h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 50px;
+    padding-bottom: 200px;
+}
+.hr{
+    height: 2px;
+    background-color: black;
+}
