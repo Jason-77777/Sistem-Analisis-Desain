@@ -8,3 +8,6 @@ Nama Member:
 
 Deskripsi:
 Ini adalah sebuah design website pemesanan tiket bioskop yang dirancang dengan simpel menggunakan HTML, CSS, dan JavaScript. 
+
+seat yg ad trailer
+seating yg plih tmpt duduk
