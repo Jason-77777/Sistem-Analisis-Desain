@@ -84,3 +84,15 @@ nav a:hover {
 .footer-section li a:hover {
     color: #00eeff;
 }
+
+
+
+
+.middle{
+    background-color: white;
+    height: 100vh;
+}
+
+.rincitiket img{
+    width: 50%;
+}
