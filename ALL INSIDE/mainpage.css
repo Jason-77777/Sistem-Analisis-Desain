@@ -52,19 +52,25 @@ nav a:hover {
 
 
 /* BODY */
+.image-container {
+    background-color: #3498db; /* Warna latar belakang biru */
+    overflow: hidden; /* Menghilangkan overflow */
+}
+
 .slideshow-container {
-    max-width: fit-content;
-    max-height: fit-content;
+    max-width: 1263px; /* Sesuaikan dengan lebar gambar */
     margin: auto;
     position: relative;
     text-align: center;
-    display: block;
 }
 
 .mySlides {
-    display: flex;
-    margin: auto;
-    position: relative;
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
 }
 
 .dot-container {
@@ -154,8 +160,8 @@ nav a:hover {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-/* 
-.movie-entry {
+
+/* .movie-entry {
     width: 100%;
 } */
 
